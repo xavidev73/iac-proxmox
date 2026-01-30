@@ -1,0 +1,9 @@
+plugin: community.general.proxmox
+user: "ansible-awx@pve"
+token_id: "tu-token-id"
+token_secret: "tu-token-secret"
+url: "https://192.168.1.100:8006"
+validate_certs: false
+# Esto agrupa tus VMs por estado (running, stopped)
+group_by:
+  - status
